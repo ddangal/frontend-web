@@ -15,25 +15,38 @@
     </div>
 </header>
 <div class="container">
-    <div class="alert alert-danger" role="alert">
-        Invalid Username/password. Please try again.
-    </div>
-    <div class="row py-5 justify-content-center">
-        <form [formGroup]="loginForm" (ngSubmit)="login()" class="col-lg-4">
-            <h2>Log in</h2>
-            <div class="form-row">
-                <div class="form-group col-md-12">
-                    <label for="first-name">User Name</label>
-                    <input type="text" formControlName="username" class="form-control" id="f-name" />
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-12">
-                    <label for="first-name">Password</label>
-                    <input type="password" formControlName="password" class="form-control" id="password" />
-                </div>
-            </div>
-            <button type="submit" class="btn btn-primary">Log in</button>
-        </form>
-    </div>
+
+  <div class="alert alert-danger" role="alert">
+    Invalid Username/password. Please try again.
+  </div>
+  <div class="row py-5 justify-content-center">
+    <form [formGroup]="loginForm" (ngSubmit)="login()" class="col-lg-4">
+      <h2>Log in</h2>
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <label for="first-name">User Name</label>
+          <input
+            type="text"
+            formControlName="username"
+            class="form-control"
+            id="f-name"
+          />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <label for="first-name">Password</label>
+          <input
+            type="password"
+            formControlName="password"
+            class="form-control"
+            id="password"
+          />
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Log in</button>
+      &nbsp;<a [routerLink]="['/signup']">Sign up</a>
+    </form>
+  </div>
 </div>
+
