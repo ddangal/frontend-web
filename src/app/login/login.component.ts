@@ -20,5 +20,7 @@ export class LoginComponent implements OnInit {
     });
   }
 
-  login() {}
+  login() {
+    console.log(this.loginForm.value);
+  }
 }
