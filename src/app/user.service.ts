@@ -14,7 +14,7 @@ export class UserService {
   signup(data) {
     let headers = new HttpHeaders();
     headers.append('Content-Type' , 'multipart/form-data');
-    return this.http.post<any>(`${this.apiUrl}/api/accounts/signup/`, data, {headers: headers})
+    return this.http.post<any>(`${this.apiUrl}/rest-user/registration/`, data, {headers: headers})
       .pipe(map(user => {
         return user;
       }));

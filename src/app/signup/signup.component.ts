@@ -23,6 +23,7 @@ export class SignupComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.signup();
   }
   signup(){
     this.signupForm =this.formBuilder.group({
