@@ -22,4 +22,21 @@ phases:
       - ng build
       # - command
   #post_build:
-    #comm
+    #commands:
+      #- aws s3 sync s3://orlando-build-store/orlando-FE-build/angular-sample-project/ s3://orlando.phuyal.co.uk/
+      # - 
+artifacts:
+  files:
+    - '**/*'
+
+  discard-paths: no
+#artifacts:
+  #files:
+    # - location
+    # - location
+  #name: $(date +%Y-%m-%d)
+  #discard-paths: yes
+  base-directory: 'dist*'
+#cache:
+  #paths:
+    # - paths
