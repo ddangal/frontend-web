@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "hackApp"
+    }
+  },
+  "defaultProject": "hackApp",
+  "cli": {
+    "analytics": false
+  }
 }
