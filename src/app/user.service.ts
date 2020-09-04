@@ -23,4 +23,17 @@ export class UserService {
         })
       );
   }
-}
+  upload(data) {
+    console.log('api is', this.apiUrl);
+    let headers = new HttpHeaders();
+    headers.append('Content-Type', 'multipart/form-data');
+    return this.http
+      .post<any>(`${this.apiUrl}/rest-user/registration/`, data, {
+        headers: headers,
+      })
+      .pipe(
+        map((user) => {
+          return user;
+        })
+      );
+  }}

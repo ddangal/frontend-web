@@ -9,6 +9,7 @@ declare var $: any;
 })
 export class DashboardComponent implements OnInit {
   uploadForm:FormGroup
+  submitted=false
   constructor(
     private formBuilder:FormBuilder
   ) { }
@@ -56,6 +57,7 @@ export class DashboardComponent implements OnInit {
         $(event.target).next('.custom-file-label').html(fileName);
       }
     }
-
+    onSubmit(){
+      this.submitted = true;    }
 
 }
