@@ -1,0 +1,19 @@
+ //google font
+ @import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap');
+ //Theme Color
+ $primary-color: #135a70;
+ $secondary-color: #F8991D;
+ $primary-font: 'Montserrat',
+ sans-serif;
+ body {
+     margin: 0;
+     padding: 0;
+     text-align: center;
+ }
+ 
+ p {
+     font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
+     font-size: 15px;
+     font-weight: 500;
+     margin-bottom: 25px;
+ }
