@@ -4,6 +4,7 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AuthGuard } from './guard/auth-guard.guard';
+import { HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = [
   {
