@@ -10,7 +10,6 @@ export class UserService {
   constructor(private http: HttpClient) {}
 
   signup(data) {
-    console.log('api is', this.apiUrl);
     let headers = new HttpHeaders();
     headers.append('Content-Type', 'multipart/form-data');
     return this.http
@@ -22,5 +21,9 @@ export class UserService {
           return user;
         })
       );
+  }
+
+  login(data) {
+    return this.http.post<any>(`${this.apiUrl}/rest-auth/login/`, data);
   }
 }
