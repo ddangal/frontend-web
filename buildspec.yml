@@ -1,0 +1,25 @@
+version: 0.2
+#env:
+  #variables:
+     # key: "value"
+     # key: "value"
+  #parameter-store:
+     # key: "value"
+     # key: "value"
+
+phases:
+  install:
+    commands:
+      # - command
+      - npm install -g @angular/cli # we use ng build --prod to build the project for deployment. so to run ng command install angular-cli globally
+  #pre_build:
+    #commands:
+      # - command
+      # - command
+  build:
+    commands:
+      - npm install
+      - ng build
+      # - command
+  #post_build:
+    #comm
