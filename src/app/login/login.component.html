@@ -1,1 +1,61 @@
-<p>login works!</p>
+<header class="masthead">
+  <div class="container h-100">
+    <a class="nav-logo text-center" href="#page-top"
+      ><img
+        src="http://startup-templates.s3-website-ap-southeast-1.amazonaws.com/images/logo.png"
+    /></a>
+    <div
+      class="row h-100 align-items-center justify-content-center text-center"
+    >
+      <div class="col-lg-10 align-self-end">
+        <h1 class="heading-text text-white font-weight-bold">
+          Genese Internal Hackathon
+        </h1>
+        <hr class="divider my-4" />
+      </div>
+      <div class="col-lg-8 align-self-baseline">
+        <p class="head-para text-white font-weight-light">
+          The main aim of this team is to design and develop the frontend part
+          of the Web Product. You will be working with DevOps-Setup and
+          Backend-Django for communication. If the Backend team is not ready
+          with the task, please continue with the next task. However, once the
+          Backend Team completes, please ensure QA tests your current Tasks.
+          Only the code that has been tested will be in the demo.
+        </p>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="alert alert-danger" role="alert">
+    Invalid Username/password. Please try again.
+  </div>
+  <div class="row py-5 justify-content-center">
+    <form [formGroup]="loginForm" (ngSubmit)="login()" class="col-lg-4">
+      <h2>Log in</h2>
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <label for="first-name">User Name</label>
+          <input
+            type="text"
+            formControlName="username"
+            class="form-control"
+            id="f-name"
+          />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <label for="first-name">Password</label>
+          <input
+            type="password"
+            formControlName="password"
+            class="form-control"
+            id="password"
+          />
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Log in</button>
+    </form>
+  </div>
+</div>
